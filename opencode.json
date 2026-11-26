@@ -1,0 +1,22 @@
+{
+  "instructions": [
+    ".opencode/enola.md"
+  ],
+  "mcp": {
+    "enola": {
+      "command": [
+        "/Users/llenn/.local/share/uv/tools/enola-cli/bin/enola"
+      ],
+      "enabled": true,
+      "type": "local"
+    },
+    "trail": {
+      "command": [
+        "trail",
+        "mcp"
+      ],
+      "enabled": true,
+      "type": "local"
+    }
+  }
+}
