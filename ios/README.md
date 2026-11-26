@@ -1,10 +1,10 @@
-# ReelDL Speech for iPhone
+# reel.ex for iPhone
 
-ReelDL Speech provides on-device Shortcuts actions for iPhone speech transcription:
+reel.ex provides on-device Shortcuts actions for iPhone speech transcription:
 - **Transcribe Audio (Offline)** accepts an audio file and transcribes speech using Parakeet Ultra.
-- **Transcribe Reel (Offline)** accepts the Reel **Audio**, a **Speech Model** selection, and an optional **File Name** (which can be set to the post ID variable or left blank). It queues in the foreground, transcribes audio entirely on-device, and writes the transcript directly to **Files > On My iPhone > ReelDL Speech > ReelDL Transcripts**.
+- **Transcribe Reel (Offline)** accepts the Reel **Audio**, a **Speech Model** selection, and an optional **File Name** (which can be set to the post ID variable or left blank). It queues in the foreground, transcribes audio entirely on-device, and writes the transcript directly to **Files > On My iPhone > reel.ex > ReelDL Transcripts**.
 
-> **Important:** Keep ReelDL Speech open in the foreground until it indicates **Saved**. Once saved, you can share the transcript immediately or access it in the Files app.
+> **Important:** Keep reel.ex open in the foreground until it indicates **Saved**. Once saved, you can share the transcript immediately or access it in the Files app.
 
 ## Setup
 

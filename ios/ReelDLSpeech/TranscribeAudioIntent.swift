@@ -33,7 +33,7 @@ enum ReelSpeechModel: String, AppEnum {
 
 struct TranscribeReelIntent: AppIntent {
     static let title: LocalizedStringResource = "Transcribe Reel (Offline)"
-    static let description = IntentDescription("Saves a speech transcript to Files using ReelDL Speech.")
+    static let description = IntentDescription("Saves a speech transcript to Files using reel.ex.")
     static var supportedModes: IntentModes { .foreground(.immediate) }
 
     @Parameter(title: "Audio")

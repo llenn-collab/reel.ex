@@ -43,7 +43,7 @@ enum SpeechModelID: String, CaseIterable, Identifiable {
             .replacingOccurrences(of: ".en", with: " (English)")
     }
 
-    var sizeNote: String { "Keep ReelDL open while the model installs." }
+    var sizeNote: String { "Keep reel.ex open while the model installs." }
 
     var supportsMultilingualSpeech: Bool {
         self != .parakeetUltra && !rawValue.contains(".en") && !rawValue.hasPrefix("distil-")
@@ -282,7 +282,7 @@ final class ModelStore {
         guard !isBusy else { return }
         isBusy = true
         errorMessage = nil
-        status = "Downloading Ultra model… Keep ReelDL open."
+        status = "Downloading Ultra model… Keep reel.ex open."
         defer {
             isBusy = false
             refreshStatus()
@@ -328,7 +328,7 @@ final class ModelStore {
         guard !isBusy else { return }
         isBusy = true
         errorMessage = nil
-        status = "Downloading \(SpeechModelID(rawValue: variant)?.title ?? "Whisper")… Keep ReelDL open."
+        status = "Downloading \(SpeechModelID(rawValue: variant)?.title ?? "Whisper")… Keep reel.ex open."
         defer {
             isBusy = false
             refreshStatus()
@@ -531,13 +531,13 @@ enum ModelStoreError: LocalizedError {
     var errorDescription: String? {
         switch self {
         case .modelMissing:
-            return "Open ReelDL Speech and install and enable Parakeet Ultra."
+            return "Open reel.ex and install and enable Parakeet Ultra."
         case .hindiModelMissing:
-            return "Open ReelDL Speech and install and enable a multilingual Whisper model."
+            return "Open reel.ex and install and enable a multilingual Whisper model."
         case .noEnabledModel:
-            return "Open ReelDL Speech and turn on Use for transcription for an installed model."
+            return "Open reel.ex and turn on Use for transcription for an installed model."
         case .busy:
-            return "ReelDL Speech is already downloading or transcribing. Try again shortly."
+            return "reel.ex is already downloading or transcribing. Try again shortly."
         case .incompleteDownload:
             return "The download did not produce a complete model. Try downloading again."
         case .incompatibleModel:

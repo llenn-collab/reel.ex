@@ -11,12 +11,12 @@
       "type": "local"
     },
     "trail": {
+      "type": "local",
       "command": [
         "trail",
         "mcp"
       ],
-      "enabled": true,
-      "type": "local"
+      "enabled": true
     }
   }
 }

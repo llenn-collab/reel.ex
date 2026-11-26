@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="color-scheme" content="light dark">
-  <title>ReelDL Speech — App preview</title>
+  <title>reel.ex — App preview</title>
   <style>
     @font-face {
       font-family: "Clash Grotesk";
@@ -99,7 +99,7 @@
   <div class="device" id="device">
     <header>
       <div class="statusbar"><span>9:41</span><span class="status-icons"><span>●●●●</span><span>◕</span><span>▰</span></span></div>
-      <div class="nav">ReelDL</div>
+      <div class="nav">reel.ex</div>
     </header>
     <main>
       <section class="intro">
@@ -152,7 +152,7 @@
     let toastTimer, noticeTimer, installTimer;
     function say(message){toast.textContent=message;toast.classList.add('show');clearTimeout(toastTimer);toastTimer=setTimeout(()=>toast.classList.remove('show'),2200)}
     function showInstallNotice() {
-      notice.textContent = 'Keep ReelDL open while the model installs.';
+      notice.textContent = 'Keep reel.ex open while the model installs.';
       notice.classList.add('show');
       clearTimeout(noticeTimer);
       noticeTimer = setTimeout(() => {

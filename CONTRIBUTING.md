@@ -1,10 +1,10 @@
-# ReelDL Contribution Guide
+# reel.ex Contribution Guide
 
 Thank you for taking the time to read this Guide.
 
 ## Ask questions and provide feedback
 
-Questions can be asked about, suggestions and complaints can be made for new and existing features; error codes and messages; data tracking; typos; the website's contents, look and feel; this guide; ways of doing things; basically anything related to ReelDL. Just [open an issue](https://github.com/llenn-collab/ReelDL/issues/new) and write down everything.
+Questions can be asked about, suggestions and complaints can be made for new and existing features; error codes and messages; data tracking; typos; the website's contents, look and feel; this guide; ways of doing things; basically anything related to reel.ex. Just [open an issue](https://github.com/llenn-collab/ReelDL/issues/new) and write down everything.
 
 > **NOTE:** You need a GitHub account to open an issue or make a change.
 
@@ -41,8 +41,8 @@ Open `ios/ReelDLSpeech.xcodeproj` in full Xcode with an iOS 27 or newer SDK and 
 Before release, test the following on physical iPhones running iOS 26 and iOS 27:
 
 - On a fresh install, try the companion action before downloading the model. Confirm the error explains how to install it. Interrupt a download, retry, and confirm that setup can finish. Import each supported folder layout from Files, reject an incompatible folder, and verify that a failed import leaves the previous model usable.
-- Make a separate shortcut that passes a local M4A to **Transcribe Reel (Offline)**. In Airplane Mode, run it and check the progress bar and saved file in ReelDL Speech. Repeat with longer audio, speech-free audio, and an invalid file.
-- Run both Reel shortcuts from Instagram's share sheet. Check **On My iPhone → Scriptable → ReelDL Transcripts** for Apple's transcript and **On My iPhone → ReelDL Speech → ReelDL Transcripts** for the offline transcript. Repeat after a cold app launch and after deleting and reinstalling the model.
+- Make a separate shortcut that passes a local M4A to **Transcribe Reel (Offline)**. In Airplane Mode, run it and check the progress bar and saved file in reel.ex. Repeat with longer audio, speech-free audio, and an invalid file.
+- Run both Reel shortcuts from Instagram's share sheet. Check **On My iPhone → Scriptable → ReelDL Transcripts** for Apple's transcript and **On My iPhone → reel.ex → ReelDL Transcripts** for the offline transcript. Repeat after a cold app launch and after deleting and reinstalling the model.
 - Install Parakeet Ultra and a multilingual Whisper model. Disable each slot in turn and confirm **App Default** uses the remaining enabled model. With Whisper enabled, test Hindi and Hindi-English speech in Airplane Mode using local audio.
 - Use a held-out set of human-transcribed Reels that includes accents, fast speech, background music, overlap, and relevant names. Score both engines on the same M4A and with the same text normalization. Record corpus word error rate (`(substitutions + deletions + insertions) / reference words`), dropped phrases, and name errors. Keep the optional rollout gated on a reduction of at least 2 absolute word-error-rate points and reliable share-sheet completion on both OS versions.
 - On the oldest supported phone, use Instruments to record peak physical footprint and elapsed time for first-use model preparation, a cold shortcut run, and a warm run. Record model files and compiled cache storage separately.

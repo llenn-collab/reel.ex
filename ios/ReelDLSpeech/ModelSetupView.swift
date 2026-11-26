@@ -52,7 +52,7 @@ struct ModelSetupView: View {
             .background(canvas.ignoresSafeArea())
             .overlay(alignment: .top) {
                 if installNoticeID != nil {
-                    Text("Keep ReelDL open while the model installs.")
+                    Text("Keep reel.ex open while the model installs.")
                         .font(.custom("ClashGrotesk-Medium", size: 15, relativeTo: .subheadline))
                         .padding(.horizontal, 16)
                         .padding(.vertical, 12)
@@ -77,7 +77,7 @@ struct ModelSetupView: View {
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .principal) {
-                    Text("ReelDL")
+                    Text("reel.ex")
                         .font(.custom("ClashGrotesk-Medium", size: 17, relativeTo: .body))
                         .tracking(-0.2)
                         .foregroundStyle(ink)
@@ -156,7 +156,7 @@ struct ModelSetupView: View {
                     .accessibilityIdentifier("shareSavedTranscript")
                 }
                 if let transcript = transcriptionJob.unsavedTranscript {
-                    ShareLink(item: transcript, subject: Text("ReelDL transcript")) {
+                    ShareLink(item: transcript, subject: Text("reel.ex transcript")) {
                         Label("Share transcript text", systemImage: "square.and.arrow.up")
                     }
                     .accessibilityIdentifier("shareUnsavedTranscript")
